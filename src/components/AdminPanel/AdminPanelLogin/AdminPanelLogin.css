@@ -1,0 +1,10 @@
+.adminPanelContainer {
+    width: 100%;
+    min-height: 100% ;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #d6d6d6;
+    /* background-color: #2D3748; */
+}
