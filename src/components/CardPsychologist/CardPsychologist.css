@@ -1,0 +1,117 @@
+.cardPsychologistContainer {
+    width: 100%;
+    height: 25%;
+    position: relative;
+    margin-bottom: 2em;
+    font-family: sans-serif;
+    background-color: rgba(11, 75, 68, 0.027);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.vermas{
+    background-color: rgba(11, 75, 68, 0.027);
+    border: none;
+    font-style: italic;
+    font-size: x-small;
+    font-weight: 600;
+}
+
+.ProfileBox {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;       
+}
+
+.avatar {
+    position: relative;
+    border-radius: 50%;
+}
+
+.About {
+    width: 100%;
+    position: relative;
+    margin-top: 1em;
+    height: auto;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerCenter {
+    width: 50%;
+    height: 100%;        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;    
+}
+
+.Badge {
+    margin-right: 0.8em;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.containerBottom {
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.iconCard {
+    position: relative;
+    width: 50%;
+}
+
+.textcalendar {
+    position: relative;
+    font-weight: bold;
+    /* color: rgba(6, 6, 77, 0.637); */
+}
+
+.appointmentButton{
+    position: relative;
+    width: 50%;
+    color: rgb(247, 247, 247);
+}
+
+.calendar {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: initial;
+    top: 50%;
+    animation: frames .15s linear;
+  }
+  @keyframes frames {
+    0%  {transform: scale(0);}
+    100% {transform: scale(100%);}
+  }
