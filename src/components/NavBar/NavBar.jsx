@@ -85,7 +85,24 @@ const DesktopNav = () => {
             color: "#090964"
           }}
         >
-          Home
+          Inicio
+        </Button>
+      </Link>
+
+      <Link to="/servicios">
+        <Button
+          display={{ base: "none", md: "inline-flex" }}
+          fontSize={"sm"}
+          fontWeight={600}
+          color={"white"}
+          bg={"#090964"}
+          href={"/home"}
+          _hover={{
+            bg: "white",
+            color: "#090964"
+          }}
+        >
+          Servicios
         </Button>
       </Link>
 
@@ -214,8 +231,12 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
-    label: "Home",
+    label: "Inicio",
     href: "/",
+  },
+  {
+    label: "Servicios",
+    href: "/servicios",
   },
   {
     label: "Profesionales",

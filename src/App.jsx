@@ -14,6 +14,7 @@ import LoginForm from "./components/LoginForm/LoginForm";
 import Psychologists from "./components/Psychologists/Psychologists.jsx";
 import Footer from "./components/Footer/Footer";
 import Faqs from "./components/faqs/Faqs";
+import Services from "./components/Services/Services.jsx";
 import Payments from "./components/Payments/Payments";
 import PostsDetail from "./components/Post/PostsDetail/PostsDetail.jsx";
 import CheckoutPayment from "./components/Payments/CheckoutPayment";
@@ -52,6 +53,7 @@ export default function App() {
         <Route path="/signup" element={<RegisterForm />} />
         <Route path="/signin" element={<LoginForm />} />
         <Route path="/preguntasfrecuentes" element={<Faqs />} />
+        <Route path="/servicios" element={<Services />} />
         <Route path="/home" element={<Home />} />
         {/* <Route path="/psicologos" element={<Psychologists />} /> */}
         <Route path="/detailPsychologist/:IdUserPsychologist" element={<PsychologistDetail />} />
@@ -77,7 +79,7 @@ export default function App() {
         <Route path='/adminpanel/clients/:idUserClient' element={<AdminClientDetails />} />
         <Route path='/adminpanel/clients/edit/:idUserClient' element={<AdminClientEdit />} />
         <Route path='/adminpanel/psychologists' element={<AdminPanelPsychologists />} />
-        <Route path='/adminpanel/psychologists/:IdUserPsychologist' element={<AdminPsichologistDetails/>} />
+        <Route path='/adminpanel/psychologists/:IdUserPsychologist' element={<AdminPsichologistDetails />} />
         <Route path='/adminpanel/psychologists/edit/:IdUserPsychologist' element={<AdminPsichologistEdit />} />
         {/* <Route path='/adminpanel/posts' element={<AdminPanelPosts />} /> */}
         {/* <Route path="/adminpanel/posts/:idPost" element={<AdminPostDetail/>}/> */}

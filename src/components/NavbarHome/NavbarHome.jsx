@@ -141,6 +141,23 @@ export default function NavbarHome() {
                   Profesionales
                 </Button>
               </Link>
+
+              <Link to="/servicios">
+                <Button
+                  display={{ base: "none", md: "inline-flex" }}
+                  fontSize={"sm"}
+                  fontWeight={600}
+                  color={"white"}
+                  bg={"#090964"}
+                  href={"/home"}
+                  _hover={{
+                    bg: "white",
+                    color: "#090964"
+                  }}
+                >
+                  Servicios
+                </Button>
+              </Link>
             </Stack>
           </HStack>
           <Flex alignItems={"center"}>
