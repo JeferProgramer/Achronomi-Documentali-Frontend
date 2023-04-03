@@ -63,11 +63,14 @@ function Appointments() {
       if (result.isDenied) {
         if (tokenClient) {
           setIsDeleted(true) 
+          window.location.reload()
           //acá ya se ejecutò useEffect(1), entonces si quiero eliminar este appointment, seteo isDeleted en true para ejecutar useEffect(2)
         }
         if (tokenPsychologist) {
           dispatch(deleteAppointmentAsPsychologist(idAppointment)) //si soy profesional directamente elimino el appointment
             .then(dispatch(getAppointmentAsPsychologist()))
+
+          window.location.reload()
         }
       }
     })

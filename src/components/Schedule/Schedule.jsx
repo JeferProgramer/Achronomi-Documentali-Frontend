@@ -173,7 +173,7 @@ function Schedule({ firstName, lastName, IdUserPsychologist, setCalendar }) {
                         </VStack>
                     </HStack>
                 </VStack>
-                <Button bg='#090964' color='white' mb='2em' colorScheme='#090964' onClick={dispatchAppointment}>
+                <Button bg='#090964' color='white' colorScheme='#090964' onClick={dispatchAppointment}>
                     Agendar
                 </Button>
             </Stack>
