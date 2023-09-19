@@ -59,14 +59,8 @@ function RegisterForm() {
         if (!signupForm.firstname) {
             errors.firstname = 'Inserte un nombre'
         }
-        if (signupForm.firstname && !(signupForm.firstname).match(/^[A-Za-z]+$/)) {
-            errors.firstname = 'Inserte un nombre válido'
-        }
         if (!signupForm.lastname) {
             errors.lastname = 'Inserte un apellido'
-        }
-        if (signupForm.lastname && !(signupForm.lastname).match(/^[A-Za-z]+$/)) {
-            errors.lastname = 'Inserte un apellido válido'
         }
         if (!signupForm.birthdate) {
             errors.birthdate = 'Inserte fecha de nacimiento'
@@ -83,10 +77,6 @@ function RegisterForm() {
         if (signupForm.email && !(signupForm.email).match(/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i)) {
             errors.email = 'Inserte un email válido'
         }
-         if (signupForm.profileimage === '') {
-            errors.profileimage = 'Inserte una imagen de perfil'
-        }
-        
         if (!signupForm.password) {
             errors.password = 'Inserte una contraseña'
         }
