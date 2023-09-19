@@ -44,7 +44,6 @@ function RegisterForm() {
         latitude: '',
         longitude: '',
         email: "",
-        profileImage: "",
         license: "",
         dni: "",
         specialities: [],
@@ -184,7 +183,6 @@ function RegisterForm() {
             formdata.append("birthdate" , signupForm.birthdate)
             formdata.append("location" , signupForm.location)
             formdata.append("password" , signupForm.password)
-            formdata.append("profileImage" , signupForm.profileImage)
             formdata.append("latitude" , signupForm.latitude)
             formdata.append("longitude" , signupForm.longitude)
             formdata.append("specialities" , signupForm.specialities)
@@ -224,7 +222,6 @@ function RegisterForm() {
             formdata.append("country" , signupForm.country)
             formdata.append("password" , signupForm.password)
             formdata.append("repeatpassword" , signupForm.repeatpassword)
-            formdata.append("profileImage" , signupForm.profileImage)
             
             const response = await axios.post(`${baseURL}/userclient/client/register`, formdata,{
                 headers: { "Content-Type": "multipart/form-data" }
@@ -408,8 +405,6 @@ function RegisterForm() {
                                                     )
                                                     : null
                                             }
-                                            <Input  name='profileImage'  padding={'5px'} type={'file'} variant='flushed'  bg='white' marginTop='2em' onChange={handleImageProfile} />
-                                            {formErrors.profileimage && <Text fontSize='sm' color='white'>{formErrors.profileimage}</Text>}
 
                                             <InputGroup variant='flushed' size='md' bg='white' marginTop='2em' >
                                                 <Input
