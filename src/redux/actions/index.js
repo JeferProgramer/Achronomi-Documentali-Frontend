@@ -73,7 +73,7 @@ export const getUserPsychologistDetailsasClient = (IdUserPsychologist) => {
         payload: psychologist.data,
       });
     } catch (error) {
-      Swal.fire("Error", "No Hay Psicologos Para Mostrar", "error");
+      Swal.fire("Error", "No hay prefesionales para mostrar", "error");
     }
   };
 };
@@ -180,7 +180,7 @@ export const getAllPsychologist = () => {
         payload: json.data,
       });
     } catch (error) {
-      Swal.fire("Error", "No Hay Psicologos Para Mostrar", "error");
+      Swal.fire("Error", "No hay prefesionales para mostrar", "error");
     }
   };
 };
@@ -198,7 +198,7 @@ export const getPsychologistByStatus = () => {
 
     } catch (error) {
       console.log(error);
-      Swal.fire("Error", "No Hay Psicologos Para Mostrar", "error");
+      Swal.fire("Error", "No hay prefesionales para mostrar", "error");
     }
   }
 };
@@ -259,7 +259,7 @@ export const getUserPsychologistOne = () => {
         payload: psychologist.data,
       });
     } catch (error) {
-      Swal.fire("Error", "No Hay Psicologos Para Mostrar", "error");
+      Swal.fire("Error", "No hay prefesionales para mostrar", "error");
     }
   };
 };
@@ -1125,7 +1125,7 @@ export const AdminGetAllPsychologist = () => {
         payload: json.data,
       });
     } catch (error) {
-      Swal.fire("Error", "No Hay Psicologos Para Mostrar", "error");
+      Swal.fire("Error", "No hay prefesionales para mostrar", "error");
     }
   };
 };
@@ -1176,7 +1176,7 @@ export const AdminGetUserPsychologistDetail = (idUserPsychologist) => {
         payload: psychologist.data,
       });
     } catch (error) {
-      Swal.fire("Error", "No Hay Psicologos Para Mostrar", "error");
+      Swal.fire("Error", "No hay prefesionales para mostrar", "error");
     }
   };
 };
